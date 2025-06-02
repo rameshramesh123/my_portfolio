@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./build/img/portfolio.png" type="image/x-icon">
+    <link rel="stylesheet" href="build/css/output.css" />
+    <link rel="stylesheet" href="build/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script defer src="build/js/menu.js"></script>
+    <script defer src="build/js/email.js"></script>
+    <title>Welcome</title>
+</head>
+
+<body class="flex min-w-full flex-col items-center text-white bg-zinc-900">
+    <aside id="socials" class="fixed left-0 top-1/3 z-10 hidden flex-col justify-center p-5 lg:flex">
+        <div id="socials-container" class="flex flex-col gap-5">
+            <a href="https://www.linkedin.com/in/ramesh-ryali-437846232/" target="_blank">
+          <img
+            src="build/img/linkedin.png"
+            alt="linked"
+            class="h-auto w-9 cursor-pointer rounded-lg duration-300 hover:scale-110 hover:bg-blue-700 hover:transition-all"
+          />
+        </a>
+            <a href="https://github.com/rameshramesh123" target="_blank">
+          <img
+            src="build/img/footer-github.png"
+            alt="github"
+            class="h-auto w-9 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-purple-500 hover:transition-all"
+          />
+        </a>
+
+            <a href="mailto:rjramesh976@gmail.com" target="_blank">
+          <img
+            src="build/img/mail.png"
+            alt="mail"
+            class="h-auto w-9 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-red-600 hover:transition-all"
+          />
+        </a>
+        </div>
+    </aside>
+    <header class="fixed top-0 z-10 flex h-20 min-w-full justify-center p-2 text-lg text-gray-300 sm:h-24">
+        <div class="header-hero flex w-4/5 items-center justify-between">
+<img id="logo" src="build/img/rlogo.png" alt="logo" class="block h-16 sm:h-20 md:h-24 lg:h-28 w-auto" />
+            <img id="menu" src="build/img/menu.svg" alt="menu" class="block h-1/2 hover:cursor-pointer lg:hidden" />
+            <nav id="navbar" class="hidden gap-8 text-3xl lg:flex">
+                <a href="index.html" class="transition-all duration-300 hover:scale-x-105 hover:text-blue-300 hover:ease-in-out">Home
+          </a>
+                <a href="#about-me" class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">About
+          </a>
+                <a href="#tech-stack" class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">Tech Stack
+          </a>
+                <a href="#projects" class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">Projects
+          </a>
+              <a href="#education" class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">Education
+          </a>
+          <a href="#certification" class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">Certification
+          </a>
+                <a href="#contact" class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out">Contact
+          </a>
+            </nav>
+        </div>
+        <div id="dropdownMenu" class="animate_animated animate__slideInDown fixed top-0 left-0 z-20 hidden h-screen w-full flex-col items-center text-3xl lg:hidden">
+            <ul id="links" class="toggle-list w-4/5">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#about-me">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#certification">Certification</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="flex min-h-screen min-w-full flex-col items-center">
+        <section id="hero" class="flex w-3/4 flex-col items-center justify-center pt-12 md:pt-24 lg:min-w-full">
+            <div id="hero-wrap" class="flex justify-center lg:gap-16">
+                <div id="intro" class="mx-auto flex flex-col justify-center">
+                    <h2 class="animate__animated animate__fadeInUp text-2xl sm:text-3xl md:text-4xl">
+                        Hi,
+                    </h2>
+                    <h2 class="animate__animated animate__fadeInUp text-2xl sm:text-3xl md:text-4xl">
+                        My name is
+                    </h2>
+                    <h3 id="name" class="animate__animated animate__fadeInUp pt-1 pb-1 text-5xl sm:text-6xl md:text-7xl">
+                        Ryali Ramesh
+                    </h3>
+                    <p class="animate__animated animate__fadeInUp pt-3 text-2xl sm:text-3xl md:text-5xl">
+                        I am java full stack developer.
+                    </p>
+                    <!-- <button id="contactMe" class="animate__animated animate__zoomIn mt-5 flex h-10 w-40 items-center justify-center rounded-3xl border-2 to-transparent p-2 text-center text-lg md:h-14 md:w-60 md:text-2xl">
+              <a href="#contact">CONTACT ME</a>
+            </button>
+
+            <button id="contactMe" class="animate__animated animate__zoomIn mt-5 flex h-10 w-40 items-center justify-center rounded-3xl border-2 to-transparent p-2 text-center text-lg md:h-14 md:w-60 md:text-2xl">
+              <a href="https://drive.google.com/file/d/1KlWxWrUJNEvzb2vKGCAoSnLbhfafT0S2/view?usp=sharing">RESUME</a>
+            </button> -->
+
+            <div class="flex gap-5 mt-5 justify-center">
+  <button id="contactMe" class="animate__animated animate__zoomIn flex h-10 w-40 items-center justify-center rounded-3xl border-2 to-transparent p-2 text-center text-lg md:h-14 md:w-60 md:text-2xl">
+    <a href="#contact">CONTACT ME</a>
+  </button>
+
+  <button id="contactMe" class="animate__animated animate__zoomIn flex h-10 w-40 items-center justify-center rounded-3xl border-2 to-transparent p-2 text-center text-lg md:h-14 md:w-60 md:text-2xl">
+    <a href="https://drive.google.com/file/d/1KlWxWrUJNEvzb2vKGCAoSnLbhfafT0S2/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a>
+  </button>
+</div>
+
+                </div>
+                <figure class="animate__animated animate__fadeInRight flex flex-col justify-center">
+                    <img src="build/img/working-removebg-preview.png" alt="hero" class="hidden max-w-xm xl:block" />
+                </figure>
+            </div>
+        </section>
+        <section id="about-me" class="flex w-full flex-col items-center justify-center gap-8 p-8">
+            <div class="aboutCard mx-auto min-h-full w-full sm:w-4/6">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl" id="about-me-caption">
+                    About Me
+                </h2>
+            </div>
+            <div class="aboutCard min-h-full w-full sm:w-4/6">
+  <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed text-white">
+    Hi, I'm Ryali Ramesh, Skilled Java Developer with hands-on experience in developing real-time projects including a bus booking system and a doctor-patient medicine management system.
+    Proficient in Java, JSP, Thymeleaf, Spring Boot, and RESTful API development. Strong problem-solving abilities,
+    with a focus on clean code, exception handling, and form validation. Comfortable working across the stack and integrating multiple databases like MySQL and MongoDB.
+  </p>
+</div>
+
+            <div class="w-full sm:w-4/6">
+                <button class="mx-auto h-10 w-40 rounded-2xl border-2 border-blue-400 bg-transparent text-lg text-blue-200 sm:h-14 sm:w-52 sm:text-2xl">
+            <a href="#contact">CONTACT</a>
+          </button>
+            </div>
+        </section>
+        <section id="tech-stack" class="flex min-w-full flex-col items-center justify-center">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl" id="tech-stack-caption">
+                My Tech Stack
+            </h1>
+            <p class="p-2 pt-5 text-center text-2xl text-gray-300">
+            </p>
+            <div id="stacks" class="z-0 grid w-3/4 grid-flow-col grid-rows-2 place-content-center gap-x-9 p-5">
+                <img src="build/img/html.png" alt="ts-1" loading="lazy" class="sm:scale-75" />
+                <img src="build/img/java-logo-1.png" alt="ts-2" loading="lazy" class="sm:scale-75" />
+                <img src="build/img/css.png" alt="ts-3" loading="lazy" class="sm:scale-75" />
+                <img src="build/img/spring logo.webp" alt="ts-4" loading="lazy" class="sm:scale-75" />
+                <img src="build/img/Bootstrap_logo.svg.png" alt="ts-8" loading="lazy" class="sm:scale-75" />
+                <img src="build/img/mongodb.png" alt="ts-5" loading="lazy" class="sm:scale-75" />
+                <img src="build/img/js.png" alt="ts-6" loading="lazy" class="sm:scale-75" />
+                <img src="build/img/Mysql.png" alt="ts-7" loading="lazy" class="sm:scale-75" />
+                <img src="build/img/react.png" alt="ts-7" loading="lazy" class="sm:scale-75" />
+                <img src="build/img/Postman.png" alt="ts-7" loading="lazy" class="sm:scale-75" />
+                <img src="build/img/Intellij idea.png" alt="ts-7" loading="lazy" class="sm:scale-75" />
+                <img src="build/img/git-logo-png-transparent.png" alt="ts-7" loading="lazy" class="sm:scale-75" />
+
+            </div>
+        </section>
+        <section id="projects" class="relative flex min-w-full flex-col items-center gap-4 p-5">
+            <div id="caption-projects" class="text-center">
+                <p class="text-3xl sm:text-4xl md:text-5xl" id="projects-heading">
+                    My Projects
+                </p>
+                <p class="p-3 text-xl text-gray-300 sm:text-2xl">
+                    Things I've built so far
+                </p>
+            </div>
+            <div id="project-container" class="flex w-4/5 flex-wrap place-content-center justify-center gap-10">
+                <div class="">
+                    <img src="" alt="" />
+                    <h2 class="mx-3 pt-1 text-xl font-bold underline-offset-1">
+                        Project 1
+                    </h2>
+                    <div class="projectLinkContainer flex w-full items-center justify-between px-4">
+                        <a href="">
+                <img src="build/img/footer-github.png" alt="" />
+              </a>
+                    </div>
+                    <p class="text- m-1 w-4/5 text-center">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint cum natus perferendis
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="education" >
+             <div id="caption-projects" class="text-center">
+                <p class="text-3xl sm:text-4xl md:text-5xl" id="projects-heading">
+                    Education
+                </p>
+            </div>
+        </section> -->
+
+        <section id="education">
+  <div id="caption-education" class="text-center">
+    <div id="caption-projects" class="text-center">
+                <p class="text-3xl sm:text-4xl md:text-5xl" id="projects-heading">
+                    Education
+                </p>
+                <p class="p-3 text-xl text-gray-300 sm:text-2xl">
+                </p>
+            </div>
+  </div>
+
+  <div class="education-container">
+    <!-- Card 1 -->
+    <div class="education-card">
+        <div class="card-content">
+                  <img src="build/img/svu.jpg" alt="Sri Venkateswara University">
+        </div>
+        <div class="card-data">
+      <h3>Sri Venkateswara University</h3>
+      <p class="degree">Master Of Computer Application [MCA]</p>
+      <p class="location">| CGPA-8.0 | Tirupati | 2024 |</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="education-card">
+        <div class="card-content">
+      <img src="build/img/svu.jpg" alt="Your Second College">
+        </div>
+        <div class="card-data">
+             <h3>Sri Venkateswara University</h3>
+      <p class="degree">Bachelor of Science [B.sc]</p>
+      <p class="location">| CGPA-8.50 | TIrupati | 2022 |</p>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- <section id="certification" class="flex min-w-full flex-col items-center justify-center">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl" id="tech-stack-caption">
+                Certification
+            </h1>
+            <p class="p-2 pt-5 text-center text-2xl text-gray-300">
+            </p>
+        </section> -->
+
+<section id="certification" class="certification-section">
+  <h1 class="text-3xl sm:text-4xl md:text-5xl" id="tech-stack-caption">
+                Certification
+            </h1>
+            <p class="p-2 pt-5 text-center text-2xl text-gray-300">
+            </p>
+
+  <!-- Certificate grid -->
+  <div class="certificate-container">
+    
+    <!-- Certificate 1 -->
+    <div class="certificate-box">
+      <div class="certificate-border">
+        <img src="build/img/guvicertificate.png" alt="GUVI Certification" class="certificate-img" />
+      </div>
+      <a href="https://drive.google.com/file/d/1SvhL5HsG9R1FgrlnX21ZhLacdm6kROGs/view?usp=sharing" target="_blank">
+        <button class="view-button">View</button>
+      </a>
+    </div>
+
+    <!-- Certificate 2 -->
+    <div class="certificate-box">
+      <div class="certificate-border">
+        <img src="build/img/nsdc.jpg" alt="NSDC Certification" class="certificate-img" />
+      </div>
+      <a href="https://drive.google.com/file/d/1RYQcqkkYqEKnGZZX2Cg-fih_IvPd8w-S/view?usp=sharing" target="_blank">
+        <button class="view-button">View</button>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+        <section id="contact" class="flex min-h-screen w-full flex-col items-center justify-center p-6">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl">Get in Touch</h2>
+            <p class="pt-4 text-center text-2xl text-gray-300">
+                I'd love to hear from you!
+            </p>
+            <section id="form-container" class="flex flex-wrap items-center justify-center xl:gap-4">
+                <form id="email-form">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Your Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email ID" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message..." required></textarea>
+
+                    <button type="button" id="submit-btn" class="items-center justify-center">Submit</button>
+                </form>
+                <figure class="m-4 hidden flex-col items-center justify-center lg:flex">
+                    <img src="build/img/contact.png" alt="contact" class="hidden max-h-full max-w-full xl:block" />
+                </figure>
+            </section>
+            <img src="build/img/my-socials.png" alt="my-socials" class="mx-auto block lg:hidden h-72" />
+        </section>
+        <footer class="flex h-15 w-4/5 items-center justify-center p-5 text-gray-200 sm:justify-between">
+            <p class="hidden sm:inline">
+                rjramesh976@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br> P.S. - All designs and images are used for educational purposes. We do not intend to earn money using copyrighted products. <br>They are just used for skills presentation. <br/>                Peace Out...🕊
+            </p>
+
+            <div id="footer-img-wrap" class="flex gap-2">
+                <a href="https://github.com/rameshramesh123" target="_blank">
+          <img src="build/img/footer-github.png" alt="github" class="h-9 w-9" />
+        </a>
+                <a href="https://www.linkedin.com/in/ramesh-ryali-437846232/" target="_blank">
+          <img src="build/img/linkedin.png" alt="linkedin" class="h-9 w-9" />
+        </a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("kHNpe9144HBR9YpEc");
+            })();
+        </script>
+</body>
+
+</html>
